@@ -67,7 +67,7 @@ MakeAJAXCall("GET",getURL,getUserDetails,true);
 console.log("Made GET AJAX call to server at: "+showTime());
 
 //deleting element 4 
-const deleteURL="http://localhost:3000/Employees/4";
+const deleteURL="http://localhost:3000/Employees/2";
 //callback function
 function userDeleted(data)
 {
@@ -79,10 +79,10 @@ MakeAJAXCall("DELETE",deleteURL,userDeleted,false);
 console.log("Made DELETE AJAX call to server at: "+showTime());
 
 //adding data using post
-const postURL= "http://localhost:3000/Employees";
+const postURL= "http://localhost:3000/Employees/2";
 //id is directly added by the server, id always increases, if element is delete and then added, then also id will be forward incremented
 //deleted id will not be added
-const emplData= {"name":"Denny","salary":"9874566"};
+const emplData= {"name":"daisy","salary":"50000"};
 function userAdded(data)
 {
     console.log("User Added: "+data);
